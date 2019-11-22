@@ -7,11 +7,11 @@
 
 
 <a href="{%url 'new' %}">글 작성하기</a>
-{% for post in blogs.all %}
+{% for post in posts.all %}
     <div class= "container">
-        <a href ="{% url 'detail' blog.id%}"><h2>{{blog.title}}</h2></a>
-       <p>{{blog.date}}</p>
-       <p>{{blog.summary}}</p>
+        <a href ="{% url 'detail' post.id%}"><h2>{{post.name}}</h2></a>
+       <p>{{post.date}}</p>
+       <p>{{post.summary}}</p>
 
     </div>
 
